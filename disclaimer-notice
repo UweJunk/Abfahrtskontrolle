@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haftungsausschluss - AbfahrtsCheck</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #333;
+        }
+        h1 { color: #111; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: #222; margin-top: 30px; }
+        footer { margin-top: 50px; font-size: 0.8em; color: #777; text-align: center; border-top: 1px solid #eee; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Haftungsausschluss (Disclaimer)</h1>
+    <p>Für die App <strong>AbfahrtsCheck</strong>.</p>
+
+    <h2>1. Warnhinweis zu Inhalten</h2>
+    <p>Die im Rahmen dieser App bereitgestellten Prüfpunkte und Checklisten dienen ausschließlich der allgemeinen Information und Orientierung des Nutzers. Die Nutzung der App entbindet den Nutzer nicht von seiner gesetzlichen Pflicht zur eigenständigen, sorgfältigen und ordnungsgemäßen Abfahrtskontrolle des Fahrzeugs gemäß den geltenden Verkehrsvorschriften.</p>
+
+    <h2>2. Haftungsbeschränkung</h2>
+    <p>Der Entwickler übernimmt keine Gewähr für die Richtigkeit, Vollständigkeit, Aktualität oder Fehlerfreiheit der App-Inhalte. Eine Haftung für Schäden, die direkt oder indirekt aus der Nutzung der App, durch unvollständige Kontrollen oder durch technische Fehlfunktionen der App entstehen, ist ausgeschlossen, sofern kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt.</p>
+
+    <h2>3. Externe Links & Funktionen</h2>
+    <p>Soweit die App Funktionen wie Kamera-Zugriffe oder Datenspeicherungen nutzt, erfolgt dies lokal auf Ihrem Gerät. Für eventuelle Datenverluste wird keine Haftung übernommen.</p>
+
+    <footer>
+        <p>&copy; 2026 [Uwe Junk]. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>
