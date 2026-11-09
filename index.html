@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbfahrtsCheck | Digitale KFZ- & LKW-Abfahrtskontrolle</title>
+    <style>
+        :root {
+            --primary: #0071e3;
+            --dark: #1d1d1f;
+            --light: #f5f5f7;
+            --grey: #86868b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { color: var(--dark); background-color: #fff; line-height: 1.5; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Hero Section */
+        header { background: linear-gradient(135deg, #2c3e50, #1a252f); color: white; padding: 80px 0; text-align: center; }
+        .app-icon { width: 120px; height: 120px; background-color: var(--primary); border-radius: 28px; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 50px; }
+        h1 { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
+        .subtitle { font-size: 1.4rem; color: #cbd5e1; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        
+        /* Badges */
+        .store-badges { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+        .badge { background-color: black; color: white; padding: 12px 24px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-flex; align-items: center; border: 1px solid #333; transition: transform 0.2s; }
+        .badge:hover { transform: scale(1.05); }
+        
+        /* Features */
+        .features { padding: 80px 0; background-color: #fff; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 50px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .card { background-color: var(--light); padding: 30px; border-radius: 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .card h3 { font-size: 1.3rem; margin-bottom: 15px; color: var(--dark); }
+        
+        /* Comparison Table */
+        .comparison { padding: 80px 0; background-color: var(--light); }
+        table { width: 100%; border-collapse: collapse; margin-top: 30px; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        th, td { padding: 18px; text-align: left; border-bottom: 1px solid #edeecf; }
+        th { background-color: #2c3e50; color: white; }
+        tr:last-child td { border-bottom: none; }
+        .check { color: #2ecc71; font-weight: bold; }
+        .cross { color: #e74c3c; font-weight: bold; }
+        
+        /* Footer */
+        footer { background-color: var(--dark); color: var(--grey); padding: 40px 0; text-align: center; font-size: 0.9rem; }
+        footer a { color: #fff; text-decoration: none; margin: 0 15px; }
+        footer a:hover { text-decoration: underline; }
+        footer p { margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="container">
+            <!-- Platzhalter für Ihr Icon (z.B. ein Emoji oder später ein Bild) -->
+            <div class="app-icon">🚚</div>
+            <h1>AbfahrtsCheck</h1>
+            <p class="subtitle">Das ideale digitale Werkzeug für die gesetzliche Lkw- und Kfz-Abfahrtskontrolle vor Fahrtantritt (nach DGUV).</p>
+            <div class="store-badges">
+                <a href="#" class="badge">AbfahrtsCheck Lite (Kostenlos)</a>
+                <a href="#" class="badge" style="background-color: var(--primary);">AbfahrtsCheck Pro (4,99 €)</a>
+            </div>
+            <p style="color: #94a3b8; font-size: 0.9rem;">Exklusiv verfügbar für iPhone & iPad</p>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Deine Vorteile auf einen Blick</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🛠️ 100% Individuell</h3>
+                    <p>Starre Standardlisten passen oft nicht zum eigenen Fahrzeug. Erstelle maßgeschneiderte Prüfungen, die exakt auf dein Reisemobil, deinen Lkw oder dein Gespann abgestimmt sind.</p>
+                </div>
+                <div class="card">
+                    <h3>📄 PDF-Protokoll</h3>
+                    <p>Erstelle nach jedem Durchlauf ein sauberes, professionelles PDF-Protokoll inklusive deines Namens und Kennzeichens zum Speichern, Drucken oder direkten Mailen an die Spedition.</p>
+                </div>
+                <div class="card">
+                    <h3>📸 Fotodokumentation</h3>
+                    <p>Ergänze jeden festgestellten Mangel blitzschnell mit einem Foto direkt aus der Kamera oder deiner Mediathek – ideal für den lückenlosen, bildlichen Nachweis.</p>
+                </div>
+                <div class="card">
+                    <h3>🔒 Datenschutz & Offline</h3>
+                    <p>Deine Daten, Kennzeichen und Fotos werden ausschließlich sicher lokal auf deinem Gerät gespeichert. Die App benötigt keine Internetverbindung.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Version Comparison -->
+    <section class="comparison">
+        <div class="container">
+            <h2 class="section-title">Lite oder Pro? Wähle deine Version</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Funktion</th>
+                        <th>AbfahrtsCheck Lite</th>
+                        <th>AbfahrtsCheck Pro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Preis</strong></td>
+                        <td>0,00 € (Dauerhaft werbefrei)</td>
+                        <td>Einmalig 4,99 € (Kein Abo!)</td>
+                    </tr>
+                    <tr>
+                        <td>Smarter Prüfungsmodus (Schritt-für-Schritt)</td>
+                        <td class="check">✔ Ja</td>
+                        <td class="check">✔ Ja</td>
+                    </tr>
+                    <tr>
+                        <td>Professioneller PDF-Protokoll-Export</td>
+                        <td class="check">✔ Ja</td>
+                        <td class="check">✔ Ja</td>
+                    </tr>
+                    <tr>
+                        <td>Eigene Prüfpunkte & Felder anlegen</td>
+                        <td class="check">✔ Bis zu 10 Punkte</td>
+                        <td class="check">✔ Unbegrenzt viele Punkte</td>
+                    </tr>
+                    <tr>
+                        <td>Fotodokumentation für Mängel</td>
+                        <td class="check">✔ Ja</td>
+                        <td class="check">✔ Ja</td>
+                    </tr>
+                    <tr>
+                        <td>Personalisierte Protokolle (Name & Kennzeichen)</td>
+                        <td class="check">✔ Ja</td>
+                        <td class="check">✔ Ja</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- HIER BITTE IHRE EXISTIERENDEN GITHUB-LINKS EINTRAGEN -->
+            <a href="https://uwejunk.github.io/Abfahrtskontrolle/legal-notice.html">Impressum</a> | 
+            <a href="https://uwejunk.github.io/Abfahrtskontrolle/privacy-policy.html">Datenschutzerklärung</a>
+            <a href="https://uwejunk.github.io/Abfahrtskontrolle/disclaimer-notice.html">Datenschutzerklärung</a>
+            <p>&copy; 2026 Uwe Junk. Alle Rechte vorbehalten. Apple, iPhone und iPad sind Marken der Apple Inc.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
