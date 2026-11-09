@@ -15,16 +15,18 @@
         body { color: var(--dark); background-color: #fff; line-height: 1.5; }
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         
-        /* Hero Section */
-        header { background: linear-gradient(135deg, #2c3e50, #1a252f); color: white; padding: 80px 0; text-align: center; }
-        .app-icon { width: 120px; height: 120px; background-color: var(--primary); border-radius: 28px; margin: 0 auto 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; font-size: 50px; }
+        /* Hero Section mit neuem Banner */
+        header { background: linear-gradient(135deg, #1a252f, #2c3e50); color: white; padding: 60px 0; text-align: center; }
+        .app-banner { width: 100%; max-width: 600px; height: auto; border-radius: 18px; margin: 0 auto 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); display: block; }
         h1 { font-size: 3rem; font-weight: 700; margin-bottom: 10px; }
         .subtitle { font-size: 1.4rem; color: #cbd5e1; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
         
         /* Badges */
         .store-badges { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
-        .badge { background-color: black; color: white; padding: 12px 24px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-flex; align-items: center; border: 1px solid #333; transition: transform 0.2s; }
-        .badge:hover { transform: scale(1.05); }
+        .badge { background-color: #333; color: white; padding: 14px 28px; border-radius: 8px; font-weight: bold; text-decoration: none; display: inline-flex; align-items: center; transition: transform 0.2s, background-color 0.2s; }
+        .badge:hover { transform: scale(1.05); background-color: #444; }
+        .badge.pro { background-color: var(--primary); }
+        .badge.pro:hover { background-color: #0077ed; }
         
         /* Features */
         .features { padding: 80px 0; background-color: #fff; }
@@ -54,13 +56,15 @@
     <!-- Hero Section -->
     <header>
         <div class="container">
-            <!-- Platzhalter für Ihr Icon (z.B. ein Emoji oder später ein Bild) -->
-            <div class="app-icon">🚚</div>
+            <!-- Bindet Ihr hochgeladenes Bild direkt als zentrales Element ein -->
+            <img src="banner.png" alt="AbfahrtsCheck Banner" class="app-banner">
             <h1>AbfahrtsCheck</h1>
             <p class="subtitle">Das ideale digitale Werkzeug für die gesetzliche Lkw- und Kfz-Abfahrtskontrolle vor Fahrtantritt (nach DGUV).</p>
+            
             <div class="store-badges">
+                <!-- Ersetzen Sie das # mit Ihren echten App Store Links, sobald verfügbar -->
                 <a href="#" class="badge">AbfahrtsCheck Lite (Kostenlos)</a>
-                <a href="#" class="badge" style="background-color: var(--primary);">AbfahrtsCheck Pro (4,99 €)</a>
+                <a href="#" class="badge pro">AbfahrtsCheck Pro (4,99 €)</a>
             </div>
             <p style="color: #94a3b8; font-size: 0.9rem;">Exklusiv verfügbar für iPhone & iPad</p>
         </div>
@@ -76,12 +80,12 @@
                     <p>Starre Standardlisten passen oft nicht zum eigenen Fahrzeug. Erstelle maßgeschneiderte Prüfungen, die exakt auf dein Reisemobil, deinen Lkw oder dein Gespann abgestimmt sind.</p>
                 </div>
                 <div class="card">
-                    <h3>📄 PDF-Protokoll</h3>
-                    <p>Erstelle nach jedem Durchlauf ein sauberes, professionelles PDF-Protokoll inklusive deines Namens und Kennzeichens zum Speichern, Drucken oder direkten Mailen an die Spedition.</p>
+                    <h3>📄 PDF-Protokoll (Pro)</h3>
+                    <p>Erstelle nach jedem Durchlauf der Pro-Version ein sauberes, professionelles PDF-Protokoll inklusive deines Namens und Kennzeichens zum Speichern, Drucken oder direkten Mailen an die Spedition.</p>
                 </div>
                 <div class="card">
-                    <h3>📸 Fotodokumentation</h3>
-                    <p>Ergänze jeden festgestellten Mangel blitzschnell mit einem Foto direkt aus der Kamera oder deiner Mediathek – ideal für den lückenlosen, bildlichen Nachweis.</p>
+                    <h3>📸 Fotodokumentation (Pro)</h3>
+                    <p>Ergänze in der Pro-Version jeden festgestellten Mangel blitzschnell mit einem Foto direkt aus der Kamera oder deiner Mediathek – ideal für den lückenlosen Nachweis.</p>
                 </div>
                 <div class="card">
                     <h3>🔒 Datenschutz & Offline</h3>
@@ -115,23 +119,28 @@
                         <td class="check">✔ Ja</td>
                     </tr>
                     <tr>
-                        <td>Professioneller PDF-Protokoll-Export</td>
+                        <td>Kompletter Prüfpunkte-Katalog einsehbar</td>
                         <td class="check">✔ Ja</td>
                         <td class="check">✔ Ja</td>
                     </tr>
                     <tr>
-                        <td>Eigene Prüfpunkte & Felder anlegen</td>
-                        <td class="check">✔ Bis zu 10 Punkte</td>
+                        <td>Aktive Prüfpunkte pro Durchgang</td>
+                        <td>Maximal 10 Punkte</td>
                         <td class="check">✔ Unbegrenzt viele Punkte</td>
                     </tr>
                     <tr>
                         <td>Fotodokumentation für Mängel</td>
+                        <td class="cross">✘ Nein</td>
                         <td class="check">✔ Ja</td>
+                    </tr>
+                    <tr>
+                        <td>Professioneller PDF-Protokoll-Export</td>
+                        <td class="cross">✘ Nein</td>
                         <td class="check">✔ Ja</td>
                     </tr>
                     <tr>
                         <td>Personalisierte Protokolle (Name & Kennzeichen)</td>
-                        <td class="check">✔ Ja</td>
+                        <td class="cross">✘ Nein</td>
                         <td class="check">✔ Ja</td>
                     </tr>
                 </tbody>
